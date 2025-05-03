@@ -1,0 +1,254 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(35, 35, 35);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(img-box/fuerte.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: black;
+    border-bottom: 1px solid rgba(237, 232, 84, 0.986);
+
+}
+
+.logo{
+    color: yellow;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 9px;
+    color: white;
+    display: block;
+    
+}
+.menu .navbar ul li a:hover{
+    color: rgb(145, 145, 238);
+}
+
+
+#menu{
+    display:none
+}
+.menu-icono{
+    width: 90px;
+}
+
+.menu label{
+    display: none;
+    cursor:pointer;
+}
+.header-info h1{
+    color: rgb(239, 247, 5);
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header-info p{
+    color: azure;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 35pxs;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: rgb(238, 246, 15);
+    font-size: 16px;
+    color: azure;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: rgb(255, 174, 0);
+}
+
+.gym{
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+}
+.gym-1{
+    width: 45%;
+    padding-right: 150px;
+}
+
+.gym-1 h2 {
+    font-size: 40px;
+    color: rgb(249, 249, 249);
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin-bottom: 35px;
+    margin: 3PX;
+}
+.gym-1 p{
+    font-size: 16px;
+    color: rgba(240, 255, 255, 0.621);
+    margin-bottom: 35px;
+    margin-left: 5px;
+}
+
+.img-1, .img-2{
+    width: 300px;
+    height: 220px;
+    border-radius: 0 20px 0 20px;
+    margin: 0 3px 6px 0;
+}
+
+.gym-1 span{
+    color:  rgb(238, 246, 15);
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(238, 246, 15);
+}
+.btn-2:hover{
+    background-color: rgb(255, 174, 0);
+}
+
+.footer{
+    border-top: 1px solid rgb(238, 246, 15);
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.footer h3{
+    color: rgb(238, 246, 15);
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.links ul{
+    display: flex;
+}
+
+
+.links ul li{
+    margin-right: 30px;
+
+}
+
+.links ul li a {
+    color: rgb(99, 97, 97);
+}
+
+@media (max-width:791PX) 
+{
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+
+    }
+    .menu .navbar{
+        position: relative;
+        top: 100;
+        left: 0;
+        right: 0;
+        background-color: rgb(66, 65, 65);
+        display: none;
+
+    }
+   .menu .navbar ul li{
+    width: 100%;
+   }
+   #menu:checked ~ .navbar{
+    display: initial;
+   }
+   .header-content{
+    padding: 30px;
+   }
+   .header-info h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+   }
+   .gym{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+   }
+    .gym-1 {
+        width: 100%;
+        padding: 0;
+        order: 1;
+
+    }
+    .gym-1 h2{
+        margin-top: 15px;
+        
+   }
+   .btn-2{
+
+    margin-bottom: 35px;
+
+   }
+   .gym-2{
+    order: 2;
+    width: 100%;
+    flex-direction: column;
+    align-items:  center;
+   }
+
+   .footer{
+    flex-direction: column;
+    align-items: center;
+   }
+   .footer h3{
+    margin-bottom: 20px;
+   }
+   .links ul li {
+    margin: 0 10px;
+   }
+}
